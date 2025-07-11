@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Figtree', sans-serif;
+            background-color: hsl(47, 88%, 63%);
+            display: flex;
+            justify-content: center; /* YATAY ortalama */
+            align-items: center;     /* DİKEY ortalama */
+            height: 90vh;  
+        }
+    
+ 
+        .card{
+            background-color: hsl(0, 0%, 100%);
+         border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 8px 8px 1px black;
+            width: 350px;
+            padding: 20px;
+              cursor: pointer;
+              transform: 0.3s ease;
+            
+        }
+        .card:hover{
+             box-shadow: 12px 12px 0px black;
+        }
+        .card_image{
+            border-image: round;
+            image-rendering: auto;
+            width: 350px;
+            height: 214px;
+        }
+
+        .card1{
+            margin-top: 10px;
+            margin-bottom: -10px;
+            font-family: 'Figtree', sans-serif;
+            font-weight: bold;
+          font-size: small;
+         
+            background-color:hsl(47, 88%, 63%) ;
+            display: inline-block;
+            padding-inline-start: 10px;
+            padding-inline-end: 10px;
+            color: black;
+            border:none;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+      .avatar{
+         display: flex;
+         align-items: center;
+         gap: 5px;
+         margin-bottom: 0%;
+         font-weight: bold;
+    
+      }
+        .avatar_image{
+           width: 35px;
+           height: 35px;
+           border-radius: 30%;
+        }
+       h1{
+        font-size: 2cap;
+        cursor: pointer;
+       }
+       h1:hover{
+         color: hsl(47, 88%, 63%);
+       }
+
+       p{
+        color :	hsl(0, 0%, 42%);
+        margin-bottom: 0;
+       }
+        .container{
+            width: 96%;
+            max-width: 1200px;
+            margin: 0% auto;
+        }
+        @media screen and (max-width:768px) {
+            content {width: 100%;};
+            
+        }
+</style>
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="illustration-article.jpg" class="card_image"> <br>
+         <h4 class="card1">Learning</h4>
+         <h5>Published 21 Dec 2023</h5>
+        <h1>HTML & CSS foundations</h1>
+         <p>These languages are the backbone of every website, defining structure, content, and presentation. </p> <br>
+         <div class="avatar">
+            <img src="image-avatar.jpg" class="avatar_image" >
+         <h5>Greg Hooper</h5>
+        </div>
+    </div>
+</body>
+</html>
